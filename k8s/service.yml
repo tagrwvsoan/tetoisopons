@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: switepo
+  name: seiodck
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "switepo"
+  - name: "seiodck"
     port: 8080
   selector:
-    app: switepo
+    app: seiodck
