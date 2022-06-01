@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: book
+  name: vckdeev
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "book"
+  - name: "vckdeev"
     port: 8080
   selector:
-    app: book
+    app: vckdeev
