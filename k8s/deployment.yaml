@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: cktreu
+  name: otiveek
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: cktreu
+      app: otiveek
   template:
     metadata:
       labels:
-        app: cktreu
+        app: otiveek
     spec:
       containers:
-      - image: okteto.dev/cktreu:latest
-        name: cktreu
+      - image: okteto.dev/otiveek:latest
+        name: otiveek
         ports:
         - containerPort: 8080
         env:
