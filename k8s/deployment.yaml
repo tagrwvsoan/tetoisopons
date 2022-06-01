@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: vckdeev
+  name: cktreu
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: vckdeev
+      app: cktreu
   template:
     metadata:
       labels:
-        app: vckdeev
+        app: cktreu
     spec:
       containers:
-      - image: okteto.dev/vckdeev:latest
-        name: vckdeev
+      - image: okteto.dev/cktreu:latest
+        name: cktreu
         ports:
         - containerPort: 8080
         env:
