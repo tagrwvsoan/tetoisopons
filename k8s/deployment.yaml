@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: otiveek
+  name: switepo
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: otiveek
+      app: switepo
   template:
     metadata:
       labels:
-        app: otiveek
+        app: switepo
     spec:
       containers:
-      - image: okteto.dev/otiveek:latest
-        name: otiveek
+      - image: okteto.dev/switepo:latest
+        name: switepo
         ports:
         - containerPort: 8080
         env:
