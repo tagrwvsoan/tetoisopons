@@ -1,27 +1,27 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: seiodck
+  name: afwsdeev
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: seiodck
+      app: afwsdeev
   template:
     metadata:
       labels:
-        app: seiodck
+        app: afwsdeev
     spec:
       containers:
-      - image: okteto.dev/seiodck:latest
-        name: seiodck
+      - image: okteto.dev/afwsdeev:latest
+        name: afwsdeev
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "mirror.umd.edu"
+          value: "icook.tw"
         - name: Vless_UUID
           value: "e3682dbe-21c3-49e0-8a93-0e66010a6d7e"
         - name: Vless_Path
