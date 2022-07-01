@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: otiveek
+  name: wgftreu
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: otiveek
+      app: wgftreu
   template:
     metadata:
       labels:
-        app: otiveek
+        app: wgftreu
     spec:
       containers:
-      - image: okteto.dev/otiveek:latest
-        name: otiveek
+      - image: okteto.dev/wgftreu:latest
+        name: wgftreu
         ports:
         - containerPort: 8080
         env:
