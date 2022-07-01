@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: afwsdeev
+  name: ehdwsdor
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: afwsdeev
+      app: ehdwsdor
   template:
     metadata:
       labels:
-        app: afwsdeev
+        app: ehdwsdor
     spec:
       containers:
-      - image: okteto.dev/afwsdeev:latest
-        name: afwsdeev
+      - image: okteto.dev/ehdwsdor:latest
+        name: ehdwsdor
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "e3682dbe-21c3-49e0-8a93-0e66010a6d7e"
+          value: "6a745ea0-4dea-49c4-adcc-00e53c601582"
         - name: Vless_Path
-          value: "/e3682dbe-21c3-49e0-8a93-0e66010a6d7e-vless"
+          value: "/6a745ea0-4dea-49c4-adcc-00e53c601582-vless"
         - name: Vmess_UUID
-          value: "e3682dbe-21c3-49e0-8a93-0e66010a6d7e"
+          value: "283bf52e-0041-48bd-a2cb-7b0da1de659f"
         - name: Vmess_Path
-          value: "/4cc6f83d-3b71-4d66-be9f-80aedb19e8a2-vmess"
+          value: "/283bf52e-0041-48bd-a2cb-7b0da1de659f-vmess"
         - name: Share_Path
           value: "$Share_Path"
