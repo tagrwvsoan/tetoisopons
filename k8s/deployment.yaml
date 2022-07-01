@@ -1,27 +1,27 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ehdwsdor
+  name: otiveek
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ehdwsdor
+      app: otiveek
   template:
     metadata:
       labels:
-        app: ehdwsdor
+        app: otiveek
     spec:
       containers:
-      - image: okteto.dev/ehdwsdor:latest
-        name: ehdwsdor
+      - image: okteto.dev/otiveek:latest
+        name: otiveek
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "mirror.umd.edu"
+          value: "icook.tw"
         - name: Vless_UUID
           value: "6a745ea0-4dea-49c4-adcc-00e53c601582"
         - name: Vless_Path
