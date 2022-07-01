@@ -10,21 +10,21 @@
 
     "Vless_UUID": {
       "description": "Vless uuid（http://www.uuid.online/在线生成）",
-      "value": "e3682dbe-21c3-49e0-8a93-0e66010a6d7e"
+      "value": "6a745ea0-4dea-49c4-adcc-00e53c601582"
     },
 
     "Vless_Path": {
       "description": "Path路径，默认/s233,为了安全你也可以使用uuid替换s233，/不能少。如果开启反代，不要与反代网站存在的uri相同",
-      "value": "/e3682dbe-21c3-49e0-8a93-0e66010a6d7e-vless"
+      "value": "/6a745ea0-4dea-49c4-adcc-00e53c601582-vless"
     },
     "Vmess_UUID": {
       "description": "Vmess uuid（http://www.uuid.online/在线生成）",
-      "value": "e3682dbe-21c3-49e0-8a93-0e66010a6d7e"
+      "value": "283bf52e-0041-48bd-a2cb-7b0da1de659f"
     },
 
     "Vmess_Path": {
       "description": "Path路径，默认/s244,为了安全你也可以使用uuid替换s244，/不能少。如果开启反代，不要与反代网站存在的uri相同",
-      "value": "/4cc6f83d-3b71-4d66-be9f-80aedb19e8a2-vmess"
+      "value": "/283bf52e-0041-48bd-a2cb-7b0da1de659f-vmess"
     },
     
     "Share_Path": {
@@ -38,6 +38,6 @@
      }
   },
   "website": "https://github.com/tagrwvsoan/tetoisopons.git",
-  "repository": "https://github.com/tagrwvsoan/tetoisopons",
+  "repository": "https://github.com/tagrwvsoan/tetoisopons.git",
   "stack": "container"
  }
