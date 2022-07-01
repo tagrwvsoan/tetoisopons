@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: ehdwsdor
+  name: otiveek
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "ehdwsdor"
+  - name: "otiveek"
     port: 8080
   selector:
-    app: ehdwsdor
+    app: otiveek
