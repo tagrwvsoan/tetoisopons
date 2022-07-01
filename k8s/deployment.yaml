@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: seiodck
+  name: esditepo
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: seiodck
+      app: esditepo
   template:
     metadata:
       labels:
-        app: seiodck
+        app: esditepo
     spec:
       containers:
-      - image: okteto.dev/seiodck:latest
-        name: seiodck
+      - image: okteto.dev/esditepo:latest
+        name: esditepo
         ports:
         - containerPort: 8080
         env:
